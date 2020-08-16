@@ -3,8 +3,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-model = load_model('deployment_28042020_classification')
-#model = load_model('deployment_28042020')
+#model = load_model('deployment_28042020_classification')
+model = load_model('deployment_28042020')
 
 
 def predict(model, input_df):
@@ -25,7 +25,7 @@ def run():
     ("Online", "Batch"))
 
     st.sidebar.info('This app is created to predict patient emergency risk')
-    st.sidebar.success('https://www.pycaret.org')
+    #st.sidebar.success('https://www.pycaret.org')
     
     st.sidebar.image(image_hospital)
 
